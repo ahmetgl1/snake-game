@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Snake Game</title>
+</head>
+
+<body>
+   
+    
+    <div class="framework">
+        <div class="game-info">
+
+
+            <div class="score">
+            <i class="fa-solid fa-trophy fa-flip" style="color: #c5c748;"></i>
+            <span id="puan">0</span>
+        </div> <!--score-->
+
+        <div class="health-list">
+
+
+            <i class="fa-solid fa-heart fa-beat-fade" style="color: red;" id="health1"></i>
+            
+            <i class="fa-solid fa-heart fa-beat-fade" style="color: red;" id="health2"></i>
+           
+            <i class="fa-solid fa-heart fa-beat-fade" style="color: red;" id="health3"> </i>
+           
+        </div><!--health-->
+
+        </div><!--game-info-->
+        <button id="play-sound" onclick="soundControl()">
+            <i id="volume-icon" class="fa-solid fa-volume-xmark" style="color: #ddc108;"></i>
+        </button>
+     
+        <div class="canvas-container">
+            <canvas id="tuval" width="400px" height="400px"></canvas>
+         </div>
+           
+   <div id="btn-container">
+    <button id="btn" onclick="newGame()">Yeni Oyun</button>
+ 
+</div> 
+<!-- game over page-->
+
+
+<div id="game-over">
+    <h1>Game Over</h1>
+    <h3> Devam Etmek İstiyor Musunuz ?</h3>
+
+    <div class="gif-container">
+        <img src="/images/snake-game.png" alt="">
+
+    </div><!--gif-container-->
+      <div class="btn-game">
+        <button id="new-game" onclick="newGame()">Yeniden Oyna</button>
+       
+      </div>
+
+
+  </div>
+
+    </div><!--framework-->
+
+     
+</body>
+
+
+<script src="/Js/script.js"></script>
+</body>
+
+</html>

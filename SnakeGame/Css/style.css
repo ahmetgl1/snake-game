@@ -1,0 +1,189 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=VT323&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  
+  justify-content: center; 
+  align-items: center; 
+}
+
+#tuval{
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+  display: block;
+   
+}
+
+
+
+.framework {
+  width: 600px;
+  height: 600px;
+  border: 4px solid #2c786c;
+  border-radius: 10px;
+  background: #22313f;
+  margin: 0 auto;
+}
+.game-info{
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+ 
+}
+.score{
+  width: 20%;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  
+}
+.score i{
+  margin: 0 8px;
+  font-size: 30px;
+  margin-right: 40px;
+}
+#puan{
+  font-size: 25px;
+  color: #fff;
+  margin-right: 40px;
+}
+
+.health-list{
+  width: 20%;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.health-list i{
+  margin: 0 3px;
+  font-size: 20px;
+}
+
+
+
+
+#game-over {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-width: 550px; 
+  height: auto;
+  padding: 20px;
+ 
+  background-color: rgba(0, 0, 0, 0.8); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+#game-over h1{
+color: white;
+padding :30px;
+margin-left: 4rem;
+display: flex;
+
+}
+
+.gif-container {
+  width: 200px; 
+  height: auto; 
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.gif-container img {
+  max-width: 100%; 
+  height: auto; 
+ 
+}
+
+
+
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-game{
+  width: 250px;
+  height: 40px;
+  border: 1px solid green;
+  margin-left: 17rem;
+  margin-top: -80px;
+  text-align: center;
+  display: flex;
+  background-color: #4CAF50;
+}
+
+
+
+
+h3{
+  color: white;
+  font-size: 14px;
+  margin-left: 20rem;
+  margin-top: 10px;
+
+}
+#new-game{
+width: 100%;
+border: none;
+background-color: #4CAF50;; 
+color: white; 
+cursor: pointer;
+text-align: center;
+}
+#new-game:hover{
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+#btn{
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  margin-bottom: -50px;
+  margin-left: 15rem;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+
+#btn:hover {
+  background-color: #0056b3; 
+} 
+
+
+
+#play-sound{
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  margin-left: 30rem;
+}
